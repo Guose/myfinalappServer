@@ -10,6 +10,9 @@ let NewSchema = new Schema({
     },
     completed: {
         type: String
+    },
+    done: {
+        type: Boolean
     }
 });
 

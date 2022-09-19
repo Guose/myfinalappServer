@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://justinelder:Mypass123@project1.vxblm.mongodb.net/FinalDB?retryWrites=true&w=majority', { useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://justinelder:Mypass123@project1.vxblm.mongodb.net/FinalDB?retryWrites=true&w=majority', { useUnifiedTopology: true, useNewUrlParser: true });
 const connection = mongoose.connection;
 connection.once('open', function() {
     console.log('DATABASE IS CONNECTED');
