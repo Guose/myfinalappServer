@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 let NewSchema = new Schema({
     description: {
@@ -14,6 +14,6 @@ let NewSchema = new Schema({
     done: {
         type: Boolean
     }
-});
+})
 
-module.exports = mongoose.model('Schema', NewSchema);
+module.exports = mongoose.model('Schema', NewSchema)
